@@ -11,15 +11,23 @@ const BodyPart = ({item,setBodyPart,bodyPart}) => {
       sx={{
        borderTop: bodyPart === item ?
              '4px solid red':"",
-            backgroundColor:'skyblue',
+            // backgroundColor:'skyblue',
             borderBottomLeftRadius:'20px',
-            width:'270px',
-            height:'280px',
+            width:'50px',
+            height:'50px',
             cursor:'pointer',
-            gap:'47px'
+            gap:'4px'
 
-        }}>
-      <img src={Icon} alt='dumbell' styles={{width:'20px',height:'20px'}}/>
+        }}
+        onClick={()=>{
+          setBodyPart(item)
+          window.scrollTo({top:1800,left:100,behavior:'smooth'})
+        }}
+        >
+      <img src={Icon} alt='dumbell' style={{width:'20px',height:'20px'}}/>
+      <Typography fontSize='24px' fontWeight="bold" color='red' textTransform="capitalize">{item}
+
+      </Typography>
       
     
     </Stack>
