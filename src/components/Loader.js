@@ -1,12 +1,10 @@
-import React from 'react' 
-import {Stack} from '@mui/material'
-// import{InfinitySpin} from 'react-loader-spinner'
+import React from 'react'
 
 const Loader = () => {
   return (
-    <Stack direction='row' justifyContent='center'>
+    <div>
       
-    </Stack>
+    </div>
   )
 }
 
