@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <Stack>
+    <Stack direction="row" justifyContent='space-around' sx={{gap:{sm:'122px',xs:'42px'},mt:{sm:'30px',xs:'20px'} ,justifyContent:'none'}} px="20px">
       <Link to="/">
         <img src={Logo} alt="pic" style={{ width: '48px', height: '49px', margin: "0 20px" }} />
       </Link>
-      <Stack>
+      <Stack direction="row" sx={{gap:'30px',fontSize:'24px',alignItems:'flex-end'}}>
         <Link
           to="/"
           style={{
@@ -20,7 +20,7 @@ const Navbar = () => {
         >
           Home
         </Link>
-        <a href="#exercises">Exercise</a>
+        <a href="#exercises" style={{textDecoration: "none"}}>Exercise</a>
       </Stack>
     </Stack>
   );
