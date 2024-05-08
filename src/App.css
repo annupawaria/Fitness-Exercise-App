@@ -60,7 +60,13 @@ body {
     width: 258px;
     height: 526px;
     margin-top: -49px;
+    display: none;
 }
+/* @media (max-width: 600px) {
+  img {
+    display: none;
+  }
+} */
 
 
 
