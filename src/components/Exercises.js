@@ -7,7 +7,7 @@ import ExerciseCard from './ExerciseCard'
 
 const Exercises = ({ exercises, setExercises, bodyPart }) => {
   const [currentPage,setCurrentPage]=useState(1)
-  const exercisePerPage=9
+  const exercisePerPage=2
   useEffect(() => {
     const fetchExercisesData = async () => {
       let exercisesData = [];
@@ -22,7 +22,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
     };
 
     fetchExercisesData();
-  }, [bodyPart]);
+  }, [bodyPart,setExercises]);
 
 
 const indexOfLastExercise=currentPage*exercisePerPage
@@ -57,7 +57,7 @@ const paginate =(e,value)=>{
           ))}
       </Stack>
 <Stack mt="100px" alignItems="center">
-{exercises.length > 9 && (
+{exercises.length > 2 && (
 <Pagination color="standard"
 page={currentPage}
 defaultPage={1}

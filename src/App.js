@@ -4,6 +4,7 @@ import {Routes,Route} from "react-router-dom"
 import Navbar from './components/Navbar'
 import ExerciseDetail from './pages/ExerciseDetail'
 import Home from './pages/Home'
+import Footer from './components/Footer'
 import "./App.css";
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
   <Route path="/" element={<Home/>}/>
   <Route path="/exercise/:id" element={<ExerciseDetail/>}/>
 </Routes>
-{/* <Footer/> */}
+<Footer/>
     </Box>
   )
 }
