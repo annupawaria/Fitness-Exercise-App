@@ -18,8 +18,8 @@ const HeroBanner = () => (
     </Stack>
     <Typography fontWeight={600} color="#FF2625" sx={{ opacity: '0.1', display: { lg: 'block', xs: 'none' }, fontSize: '200px' }}>
       Exercise
-    </Typography >
-    <img src={HeroBannerImage} alt="hero-banner" className="hero-banner-img" style={{display:{sm:'none'}}}/>
+    </Typography>
+    <Box component="img" src={HeroBannerImage} alt="hero-banner" sx={{ display: { xs: 'none', lg: 'block' }, position: 'absolute', right: '0', bottom: '0', height: '800px' }} />
   </Box>
 );
 
