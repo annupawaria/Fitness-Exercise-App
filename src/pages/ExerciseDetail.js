@@ -25,9 +25,9 @@ const ExerciseDetail = () => {
   setExerciseVideos(exerciseVideosData.contents)
 
   const targetMuscleExerciseData = await fetchData(`${exercisedbUrl}/exercises/target/${exerciseDetailData.target}`, exerciseOptions)
- 
+  setTargetMuscleExercise(targetMuscleExerciseData);
   const equipmentExerciseData = await fetchData(`${exercisedbUrl}/exercises/equipment/${exerciseDetailData.equipment}`, exerciseOptions)
- 
+  setEquipmentExercise(equipmentExerciseData)
 
 
 
